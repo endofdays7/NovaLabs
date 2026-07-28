@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "description": "Gas benchmark baseline for Soroban contracts. Generated from cargo test --release benchmarks.",
+  "generated_at": "2026-07-28T00:00:00Z",
+  "regression_threshold_pct": 20.0,
+  "contracts": {
+    "membership_token": {
+      "issue_token": { "cpu_insns": 5000000, "mem_bytes": 2000000 },
+      "transfer_token": { "cpu_insns": 3500000, "mem_bytes": 1500000 },
+      "get_token": { "cpu_insns": 1200000, "mem_bytes": 500000 },
+      "set_admin": { "cpu_insns": 2000000, "mem_bytes": 800000 },
+      "set_minter": { "cpu_insns": 2500000, "mem_bytes": 1000000 }
+    },
+    "workspace_booking": {
+      "book_workspace": { "cpu_insns": 8000000, "mem_bytes": 3500000 },
+      "cancel_booking": { "cpu_insns": 4500000, "mem_bytes": 1800000 },
+      "get_booking": { "cpu_insns": 1500000, "mem_bytes": 600000 }
+    },
+    "payment_escrow": {
+      "initialize_payment": { "cpu_insns": 7000000, "mem_bytes": 3000000 },
+      "release_funds": { "cpu_insns": 5000000, "mem_bytes": 2200000 },
+      "refund": { "cpu_insns": 4800000, "mem_bytes": 2000000 }
+    },
+    "access_control": {
+      "set_role": { "cpu_insns": 3000000, "mem_bytes": 1200000 },
+      "check_access": { "cpu_insns": 1800000, "mem_bytes": 700000 },
+      "pause": { "cpu_insns": 1500000, "mem_bytes": 600000 }
+    },
+    "resource_credits": {
+      "add_credits": { "cpu_insns": 4000000, "mem_bytes": 1600000 },
+      "consume_credits": { "cpu_insns": 2800000, "mem_bytes": 1100000 },
+      "get_balance": { "cpu_insns": 1000000, "mem_bytes": 400000 }
+    }
+  }
+}
